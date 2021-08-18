@@ -6,7 +6,12 @@
   "main": "index.js",
   "scripts": {
     "prepare" : "yarn build",
-    "build" : "tsc"
+    "build" : "tsc",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajcpwnz/apporter.git"
   },
   "keywords": [],
   "author": "ajcpwnz",
