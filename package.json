@@ -3,12 +3,12 @@
   "files": [
     "lib/**/*"
   ],
-  "version": "1.1.0",
+  "version": "1.1.3",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "publish": "npm publish lib",
-    "prepare": "yarn build && cp ./package.json lib",
+    "custompublish": "npm version && cp ./package.json lib && cd lib && npm publish && cd ../",
+    "prepare": "yarn build",
     "build": "tsc",
     "postversion": "git push && git push --tags"
   },
