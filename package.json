@@ -10,7 +10,7 @@
     "publish": "npm publish lib",
     "prepare": "yarn build && cp ./package.json lib",
     "build": "tsc",
-    "postversion": "git push && git push --tags",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
