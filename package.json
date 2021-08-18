@@ -1,12 +1,14 @@
 {
   "name": "apporter",
-  "files": ["lib/**/*"],
-  "version": "1.0.0",
+  "files": [
+    "lib/**/*"
+  ],
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepare" : "yarn build",
-    "build" : "tsc",
+    "prepare": "yarn build",
+    "build": "tsc",
     "postversion": "git push && git push --tags"
   },
   "repository": {
