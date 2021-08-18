@@ -7,7 +7,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "custompublish": "npm version && cp ./package.json lib && cd lib && npm publish && cd ../",
+    "custompublish": "cp ./package.json lib && cd lib && npm publish && cd ../",
     "prepare": "yarn build",
     "build": "tsc",
     "postversion": "git push && git push --tags"
