@@ -7,7 +7,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pub-patch": "npm version patch && yarn build && cp ./package.json lib && cd lib && npm publish && cd ../",
+    "pub-patch": "npm version patch && yarn build && cp ./package.json lib && cd lib && ls && npm publish && cd ../",
     "build": "tsc",
     "postversion": "git push && git push --tags"
   },
