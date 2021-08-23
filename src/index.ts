@@ -154,6 +154,10 @@ export class Apporter implements IHttpClient {
 
     let conf: Partial<RequestInit> = {
       method: rawConf.method,
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
     };
 
     conf.body = Apporter.dataToBody(rawConf.method, rawConf.data);
